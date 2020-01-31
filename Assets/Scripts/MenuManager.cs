@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public string[] minijuegos;
+    public int cantidadDeMinijuegos;
 
     public void EnterGameplay()
     {
-        int random = Random.Range(0, minijuegos.Length);
-        SceneManager.LoadScene(minijuegos[random]);
+        int random = Random.Range(1, cantidadDeMinijuegos+1);   // Devuelve un valor entre 1 y cantidadDeMinijuegos
+        SceneManager.LoadScene("mini"+random);
     }
 }
