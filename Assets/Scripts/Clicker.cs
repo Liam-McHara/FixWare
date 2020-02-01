@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour
 {
+    private Vector3 pos;
     public Button boton;
     public int clicksNecesarios;
     public int clickCounter = 0;
@@ -33,7 +34,7 @@ public class Clicker : MonoBehaviour
 
     void OnMouseDown()
     {
-        new Vector3 pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         objectMove.transform.position = pos;
     }
 
