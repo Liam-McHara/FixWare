@@ -8,9 +8,11 @@ public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
     public GameController gameController;
-    public float preTitleTime = 1.0f;
-    public float preGameTime = 1.0f;
-    public float postGameTime = 5.0f;
+    public float preTitleTime = 1.0f;   // antes del título
+    public float preGameTime = 1.0f;    // entre título y juego
+    public float preInfoTime = 1.0f;    // entre fin del juego y info
+    public float infoTime = 4.0f;       // info post juego
+
 
     public Image telon;
     public Text titulo;
@@ -24,6 +26,7 @@ public class MiniBase : MonoBehaviour
 
     bool titleShown = false;
     bool gameStarted = false;
+    bool infoShown = false;
     float interTimer = 0.0f;        // contador que para usar entre las muestras de elementos de la interfaz
 
 
@@ -79,8 +82,19 @@ public class MiniBase : MonoBehaviour
         }
 
         // POST-GAME
-        //if (interTimer >= 
-        
+        if (win || fail)    // Post-game
+        {
+            if (!infoShown && interTimer >= preInfoTime)  // Show info
+            {
+                interTimer = 0;
+                infoShown = true;
+                ShowInfo();
+            }
+            else if (interTimer >= infoTime)        // Load next minigame
+            {
+                LoadNext();
+            }
+        }
     }
 
     public void SetTime(float t)
@@ -138,8 +152,16 @@ public class MiniBase : MonoBehaviour
         titulo.enabled = false;
     }
 
-    void ShowGameInfo()
+    void ShowInfo()
     {
+        telon.enabled = true;
+        check.enabled = false;
+        cross.enabled = false;
         Debug.Log("ShowGameInfo");
+    }
+
+    void LoadNext()
+    {
+        Debug.Log("LoadNext");
     }
 }
