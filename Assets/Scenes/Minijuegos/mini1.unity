@@ -232,6 +232,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2007890472371902369, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_Text
+      value: Repair the meme!
+      objectReference: {fileID: 0}
     - target: {fileID: 2534499400008721059, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -302,6 +307,26 @@ PrefabInstance:
       propertyPath: timerBar
       value: 
       objectReference: {fileID: 226692545}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 966.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 168.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -191
+      objectReference: {fileID: 0}
     - target: {fileID: 7169942939650393330, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_SortingOrder
