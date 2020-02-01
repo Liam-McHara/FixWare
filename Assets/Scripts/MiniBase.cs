@@ -8,6 +8,7 @@ public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
     public GameController gameController;
+    public InfoShow infoShow;
     public float preTitleTime = 1.0f;
     public float preGameTime = 1.0f;
     public float preInfoTime = 1.0f;
@@ -34,6 +35,7 @@ public class MiniBase : MonoBehaviour
 
     void Start()
     {
+        infoShow.Hide();
         telon.enabled = true;
         titulo.enabled = false;
         check.enabled = false;
@@ -160,11 +162,18 @@ public class MiniBase : MonoBehaviour
         check.enabled = false;
         cross.enabled = false;
         infoShown = true;
+        infoShow.Show();
     }
 
     void LoadNext()
     {
         Debug.Log("LOAD NEXT!");
+        infoShow.Hide();
         gameController.LoadNext();
+    }
+
+    public int GetVidas()
+    {
+        return gameController.vidas;
     }
 }
