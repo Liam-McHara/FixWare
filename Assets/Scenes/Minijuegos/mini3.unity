@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 2007890472371902369, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_Text
-      value: Repair  t!
+      value: Repair  ti
       objectReference: {fileID: 0}
     - target: {fileID: 2534499400008721059, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
@@ -225,6 +225,26 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &93432235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8869820885538841212, guid: 12f398a56c4e669448ba8abf0c400b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 93432233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &93432236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93432235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5d198bd2c41444aadf74b0115e79ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titulo: {fileID: 0}
+  miniBase: {fileID: 0}
 --- !u!1 &539999710 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5397561872546208274, guid: 12f398a56c4e669448ba8abf0c400b6b,
