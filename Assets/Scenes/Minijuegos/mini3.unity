@@ -131,6 +131,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2534499400008721059, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5397561872546208274, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_Name
@@ -196,6 +201,11 @@ PrefabInstance:
       propertyPath: timerBar
       value: 
       objectReference: {fileID: 1681563286}
+    - target: {fileID: 7169942939650393330, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f398a56c4e669448ba8abf0c400b6b, type: 3}
 --- !u!1 &539999710 stripped
