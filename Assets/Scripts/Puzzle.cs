@@ -6,6 +6,7 @@ public class Puzzle : MonoBehaviour
 {
     public Draggable[] piezas;  // Piezas del puzzle
     MiniBase miniBase;
+    bool completado = false;
 
     void Start()
     {
@@ -14,11 +15,17 @@ public class Puzzle : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < piezas.Length; ++i)
+        if (!completado)
         {
-            if (!piezas[i].guachi) break;
-            miniBase.Win();
-            Debug.Log("COMPLETADO!");
+            int done = 0;
+            for (int i = 0; i < piezas.Length; ++i)
+            {
+                if (piezas[i].guachi) ++done;
+            }
+            if (done == piezas.Length)              // Todas las piezas en sitio -> ganar
+            {
+                miniBase.Win();
+            }
         }
     }
 }
