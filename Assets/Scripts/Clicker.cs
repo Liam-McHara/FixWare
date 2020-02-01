@@ -27,8 +27,9 @@ public class Clicker : MonoBehaviour
 
     void Update()
     {
-        if (clickCounter <= clicksNecesarios) pos = Input.mousePosition;
-        if (clickCounter >= clicksNecesarios) objectMove.transform.position = pos;
+        if (clickCounter < clicksNecesarios) pos = Input.mousePosition;
+        if (clickCounter < clicksNecesarios) objectMove.transform.position = pos;
+        if (clickCounter >= clicksNecesarios) objectMove.transform.position = objectMove.transform.position;
         if (clickCounter >= clicksNecesarios && activateObjectWhenFinish) activableObject.SetActive(true);
         if (clickCounter >= clicksNecesarios && deactivateObjectWhenFinish) deactivableObject.SetActive(false);
         if (clickCounter >= clicksNecesarios && winCondition) miniBase.Win();
