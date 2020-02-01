@@ -499,7 +499,7 @@ MonoBehaviour:
   victorias: 0
   tiempo: 5
   cantidadDeMinijuegos: 5
-  loadThis: 4
+  loadThis: 2
   loadOverride: 1
 --- !u!4 &1640806085
 Transform:
