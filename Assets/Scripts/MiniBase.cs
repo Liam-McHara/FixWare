@@ -10,8 +10,13 @@ public class MiniBase : MonoBehaviour
     public GameController gameController;
     public float preTitleTime = 1.0f;
     public float preGameTime = 1.0f;
-    public SpriteRenderer check;
-    public SpriteRenderer cross;
+    public float postGameTime = 5.0f;
+
+    public Image telon;
+    public Text titulo;
+    public Image check;
+    public Image cross;
+
     float tiempo;                   // Tiempo (segundos) para resolver el minijuego (se va reduciendo)
     float tiempoInicial;            // Tiempo (segundos) para resolver el minijuego (guarda el valor inicial)
     public bool win = false;        // Indica si se ha resuelto el minijuego
@@ -27,6 +32,8 @@ public class MiniBase : MonoBehaviour
 
     void Start()
     {
+        telon.enabled = true;
+        titulo.enabled = false;
         check.enabled = false;
         cross.enabled = false;
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
@@ -70,6 +77,9 @@ public class MiniBase : MonoBehaviour
             // Actualizar UI
             timerBar.fillAmount = tiempo / tiempoInicial;
         }
+
+        // POST-GAME
+
     }
 
     public void SetTime(float t)
@@ -81,28 +91,41 @@ public class MiniBase : MonoBehaviour
     void ShowTitle()
     {
         Debug.Log("ShowTitle :D");
+        titulo.enabled = true;
         titleShown = true;
     }
 
     void StartGame()
     {
         Debug.Log("Start Game :D");
+        telon.enabled = false;
         gameStarted = true;
     }
 
     // para provocar eventos de victoria o derrota desde otros scripts
     public void Win()
     {
-        // HAS GANADO!!  ueee
-        // aqui se hacen las cositas de cuando se gana (sumar puntos, feedback positivo, pasar al siguiente minijuego...)
-        ++gameController.victorias;
-        win = true;
+        if (!win && !fail)      // Verifica que el juego no haya finalizado ya
+        {
+            // HAS GANADO!!  ueee
+            // aqui se hacen las cositas de cuando se gana (sumar puntos, feedback positivo, pasar al siguiente minijuego...)
+            ++gameController.victorias;
+            win = true;
+            check.enabled = true;
+            Debug.Log("WIN!");
+        }
+        
     }
     public void Fail()
     {
-        // HAS PERDIDO...  buuuu
-        // aqui se hacen las cositas de cuando se pierde (perder una vida, feedback negativo, pasar al siguiente minijuego, game over...)
-        fail = true;
-        --gameController.vidas;
+        if (!win && !fail)      // Verifica que el juego no haya finalizado ya
+        {
+            // HAS PERDIDO...  buuuu
+            // aqui se hacen las cositas de cuando se pierde (perder una vida, feedback negativo, pasar al siguiente minijuego, game over...)
+            fail = true;
+            --gameController.vidas;
+            cross.enabled = true;
+            Debug.Log("Fail!");
+        }
     }
 }
