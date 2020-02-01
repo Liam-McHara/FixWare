@@ -156,6 +156,7 @@ public class MiniBase : MonoBehaviour
     {
         Debug.Log("Show info!");
         telon.enabled = true;
+        titulo.enabled = false;
         check.enabled = false;
         cross.enabled = false;
         infoShown = true;
