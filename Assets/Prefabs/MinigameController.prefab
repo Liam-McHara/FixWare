@@ -223,10 +223,10 @@ MonoBehaviour:
   preTitleTime: 1
   preGameTime: 1
   postGameTime: 5
+  telon: {fileID: 7759257435700239797}
+  titulo: {fileID: 2007890472371902369}
   check: {fileID: 3348125775675574931}
   cross: {fileID: 102846766702102089}
-  titulo: {fileID: 2007890472371902369}
-  telon: {fileID: 7759257435700239797}
   win: 0
   fail: 0
   timerBar: {fileID: 3086824587788085519}
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac90a7d59de30ae4eaa1bf28bf502e8a, type: 3}
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
