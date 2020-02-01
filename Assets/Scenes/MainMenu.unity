@@ -543,7 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 3
   victorias: 0
-  tiempo: 5
+  tiempo: 10
 --- !u!4 &1640806085
 Transform:
   m_ObjectHideFlags: 0
