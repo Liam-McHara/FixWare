@@ -272,7 +272,7 @@ PrefabInstance:
         type: 3}
       propertyPath: timerBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 226692547}
     - target: {fileID: 6754240105447030565, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_IsActive
@@ -305,6 +305,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piezas:
   - {fileID: 1403198716}
+--- !u!114 &226692547 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3086824587788085519, guid: 12f398a56c4e669448ba8abf0c400b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 226692544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &525831252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,

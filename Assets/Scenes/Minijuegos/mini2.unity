@@ -569,7 +569,7 @@ PrefabInstance:
         type: 3}
       propertyPath: timerBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1389750095}
     - target: {fileID: 6754240105447030565, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_Layer
@@ -623,6 +623,18 @@ MonoBehaviour:
   deactivateObjectWhenFinish: 0
   activableObject: {fileID: 0}
   deactivableObject: {fileID: 0}
+--- !u!114 &1389750095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3086824587788085519, guid: 12f398a56c4e669448ba8abf0c400b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1389750092}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446432891
 GameObject:
   m_ObjectHideFlags: 0

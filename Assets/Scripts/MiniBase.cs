@@ -79,7 +79,7 @@ public class MiniBase : MonoBehaviour
         }
 
         // POST-GAME
-        
+        //if (interTimer >= 
         
     }
 
@@ -136,8 +136,6 @@ public class MiniBase : MonoBehaviour
     {
         interTimer = 0;
         titulo.enabled = false;
-        ShowGameInfo();
-
     }
 
     void ShowGameInfo()
