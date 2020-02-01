@@ -24,7 +24,7 @@ public class MiniBase : MonoBehaviour
     public bool fail = false;       // Indica si se ha fallado el minijuego
 
     bool titleShown = false;
-    bool gameStarted = false;
+    public bool gameStarted = false;
     bool infoShown = false;
     float interTimer = 0.0f;        
 

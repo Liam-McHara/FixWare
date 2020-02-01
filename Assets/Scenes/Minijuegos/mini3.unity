@@ -243,8 +243,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5d198bd2c41444aadf74b0115e79ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titulo: {fileID: 0}
-  miniBase: {fileID: 0}
+  titulo: {fileID: 93432238}
+  miniBase: {fileID: 93432237}
+  tituloSinLetra: 'Repair  t '
+--- !u!114 &93432237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5397561872546208285, guid: 12f398a56c4e669448ba8abf0c400b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 93432233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539999710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8646ace48731642a5cca3b600d0f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &93432238 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2007890472371902369, guid: 12f398a56c4e669448ba8abf0c400b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 93432233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93432235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &539999710 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5397561872546208274, guid: 12f398a56c4e669448ba8abf0c400b6b,
@@ -503,12 +528,12 @@ PrefabInstance:
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.831
+      value: 2.922
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.507
+      value: 2.974
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
@@ -558,17 +583,27 @@ PrefabInstance:
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.58598405
+      value: 0.36518803
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.778976
+      value: 0.9382766
       objectReference: {fileID: 0}
+    - target: {fileID: 4908294064982703874, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 4908294064982703875, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e18d6d626701c5a41a10de997267171c, type: 2}
     - target: {fileID: 4908294064982703877, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_Name
-      value: Draggable
+      value: i
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf243c6b96164344aaf2460471822411, type: 3}

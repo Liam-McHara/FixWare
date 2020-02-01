@@ -7,16 +7,17 @@ public class ChangeTitle : MonoBehaviour
 {
     public Text titulo;
     public MiniBase miniBase;
+    public string tituloSinLetra;
+    bool cambiado = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (!cambiado && miniBase.gameStarted == true)
+        {
+            Debug.Log("Cambiando a: " + tituloSinLetra);
+            titulo.text = tituloSinLetra;
+            cambiado = true;
+        }
     }
 }
