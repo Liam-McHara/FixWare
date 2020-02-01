@@ -10,7 +10,8 @@ public class MiniBase : MonoBehaviour
     public GameController gameController;
     public float preTitleTime = 1.0f;
     public float preGameTime = 1.0f;
-    public float postGameTime = 5.0f;
+    public float preInfoTime = 1.0f;
+    public float infoTime = 4.0f;
 
     public Image telon;
     public Text titulo;
@@ -24,6 +25,7 @@ public class MiniBase : MonoBehaviour
 
     bool titleShown = false;
     bool gameStarted = false;
+    bool infoShown = false;
     float interTimer = 0.0f;        
 
 
@@ -49,10 +51,10 @@ public class MiniBase : MonoBehaviour
 
     void UpdateTimer()  
     {
+        interTimer += Time.deltaTime;
         // PRE-GAME
         if (!titleShown)
         {
-            interTimer += Time.deltaTime;
             if (interTimer >= preTitleTime)
             {
                 ShowTitle();
@@ -61,7 +63,6 @@ public class MiniBase : MonoBehaviour
         }
         else if (!gameStarted)
         {
-            interTimer += Time.deltaTime;
             if (interTimer >= preGameTime)
             {
                 StartGame();
@@ -79,7 +80,19 @@ public class MiniBase : MonoBehaviour
         }
 
         // POST-GAME
-
+        if (win || fail)
+        {
+            if (interTimer >= preInfoTime && !infoShown)
+            {
+                ShowInfo();
+                infoShown = true;
+                interTimer = 0;
+            }
+            if (interTimer >= infoTime && infoShown)
+            {
+                LoadNext();
+            }
+        }
 
     }
 
@@ -103,6 +116,8 @@ public class MiniBase : MonoBehaviour
         gameStarted = true;
     }
 
+    
+
     // para provocar eventos de victoria o derrota desde otros scripts
     public void Win()
     {
@@ -114,6 +129,7 @@ public class MiniBase : MonoBehaviour
             win = true;
             check.enabled = true;
             Debug.Log("WIN!");
+            EndGame();
         }
         
     }
@@ -127,6 +143,27 @@ public class MiniBase : MonoBehaviour
             --gameController.vidas;
             cross.enabled = true;
             Debug.Log("Fail!");
+            EndGame();
         }
+    }
+
+    void EndGame()
+    {
+        interTimer = 0;
+    }
+
+    void ShowInfo()
+    {
+        Debug.Log("Show info!");
+        telon.enabled = true;
+        check.enabled = false;
+        cross.enabled = false;
+        infoShown = true;
+    }
+
+    void LoadNext()
+    {
+        Debug.Log("LOAD NEXT!");
+        gameController.LoadNext();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -9,15 +10,25 @@ public class GameController : MonoBehaviour
     public float tiempo;    // tiempo disponible para resolver los minijuegos
     // ultimos_jugados (LATER)
 
-    
-    void Start()
+    public int cantidadDeMinijuegos;
+
+    //FOR TESTING
+    public int loadThis;
+    public bool loadOverride;
+
+    public void EnterGameplay()
     {
-        
+        if (loadOverride) SceneManager.LoadScene("mini" + loadThis);
+        else
+        {
+            int random = Random.Range(1, cantidadDeMinijuegos + 1);   // Devuelve un valor entre 1 y cantidadDeMinijuegos
+            SceneManager.LoadScene("mini" + random);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadNext()  // Carga el siguiente minijuego
     {
-        
+        int random = Random.Range(1, cantidadDeMinijuegos + 1);
+        SceneManager.LoadScene("mini" + random);
     }
 }
