@@ -176,7 +176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &581220069
 GameObject:
@@ -272,7 +272,7 @@ RectTransform:
   - {fileID: 1359818840}
   - {fileID: 1803278550}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cantidadDeMinijuegos: 3
+  loadThis: 0
+  loadOverride: 0
 --- !u!1 &699512604
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359818839
 GameObject:
@@ -430,7 +432,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac90a7d59de30ae4eaa1bf28bf502e8a, type: 3}
     m_FontSize: 78
     m_FontStyle: 0
     m_BestFit: 0
@@ -451,7 +453,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359818839}
   m_CullTransparentMesh: 0
---- !u!1 &1412467984
+--- !u!1 &1640806082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -459,41 +461,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1412467986}
-  - component: {fileID: 1412467985}
+  - component: {fileID: 1640806085}
+  - component: {fileID: 1640806084}
+  - component: {fileID: 1640806083}
   m_Layer: 0
-  m_Name: MenuManager
+  m_Name: GameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1412467985
+--- !u!114 &1640806083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412467984}
+  m_GameObject: {fileID: 1640806082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39858aa5f3c9e7445977ed8574cc0456, type: 3}
+  m_Script: {fileID: 11500000, guid: cc882a1baa39b6e409d1314c2e6d8f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidadDeMinijuegos: 3
---- !u!4 &1412467986
+--- !u!114 &1640806084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640806082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657a5298dd6ea954cb973ef778b7bead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 4
+  victorias: 0
+  tiempo: 5
+  cantidadDeMinijuegos: 5
+  loadThis: 2
+  loadOverride: 1
+--- !u!4 &1640806085
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412467984}
+  m_GameObject: {fileID: 1640806082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.13498, y: 132.44017, z: 2.4150941}
+  m_LocalPosition: {x: -4.3053856, y: -0.95855224, z: 8.370918}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1803278549
 GameObject:
@@ -574,7 +594,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1412467985}
+      - m_Target: {fileID: 1640806084}
         m_MethodName: EnterGameplay
         m_Mode: 1
         m_Arguments:
@@ -676,7 +696,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac90a7d59de30ae4eaa1bf28bf502e8a, type: 3}
     m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0

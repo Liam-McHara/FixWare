@@ -13,8 +13,8 @@
 - [ ] Script CambioCursor
 - Mecanicas de juego
   - [ ] Estarse quieto / no hacer clic *
-  - [ ] Clicar en 1 sitio *
-  - [ ] Mover 1 cosa a 1 sitio *
+  - [x] Clicar en 1 sitio 
+  - [x] Mover 1 cosa a 1 sitio 
   - [ ] Esquivar cosas con el cursor *
   - [ ] Mover el mouse de determinada manera
   - [ ] Cut the rope
