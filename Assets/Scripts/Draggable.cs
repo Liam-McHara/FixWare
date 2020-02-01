@@ -72,7 +72,7 @@ public class Draggable : MonoBehaviour
     {
         if (collision.tag == "Area")
         {
-            Guachi();
+            guachi = true;
         }
 
     }
