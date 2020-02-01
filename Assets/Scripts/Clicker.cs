@@ -33,6 +33,7 @@ public class Clicker : MonoBehaviour
         if (clickCounter >= clicksNecesarios && activateObjectWhenFinish) activableObject.SetActive(true);
         if (clickCounter >= clicksNecesarios && deactivateObjectWhenFinish) deactivableObject.SetActive(false);
         if (clickCounter >= clicksNecesarios && winCondition) miniBase.Win();
+
     }
 
     void Click()
