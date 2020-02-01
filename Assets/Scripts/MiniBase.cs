@@ -24,7 +24,7 @@ public class MiniBase : MonoBehaviour
 
     bool titleShown = false;
     bool gameStarted = false;
-    float interTimer = 0.0f;        
+    float interTimer = 0.0f;        // contador que para usar entre las muestras de elementos de la interfaz
 
 
     // UI elements (timer, win sprite, fail sprite...)
@@ -49,10 +49,10 @@ public class MiniBase : MonoBehaviour
 
     void UpdateTimer()  
     {
+        interTimer += Time.deltaTime;
         // PRE-GAME
         if (!titleShown)
         {
-            interTimer += Time.deltaTime;
             if (interTimer >= preTitleTime)
             {
                 ShowTitle();
@@ -61,12 +61,12 @@ public class MiniBase : MonoBehaviour
         }
         else if (!gameStarted)
         {
-            interTimer += Time.deltaTime;
             if (interTimer >= preGameTime)
             {
                 StartGame();
             }
         }
+
 
         // IN-GAME
         else if (gameStarted)
@@ -79,7 +79,8 @@ public class MiniBase : MonoBehaviour
         }
 
         // POST-GAME
-
+        
+        
     }
 
     public void SetTime(float t)
@@ -113,6 +114,7 @@ public class MiniBase : MonoBehaviour
             win = true;
             check.enabled = true;
             Debug.Log("WIN!");
+            EndGame();
         }
         
     }
@@ -126,6 +128,20 @@ public class MiniBase : MonoBehaviour
             --gameController.vidas;
             cross.enabled = true;
             Debug.Log("Fail!");
+            EndGame();
         }
+    }
+
+    void EndGame()
+    {
+        interTimer = 0;
+        titulo.enabled = false;
+        ShowGameInfo();
+
+    }
+
+    void ShowGameInfo()
+    {
+        Debug.Log("ShowGameInfo");
     }
 }
