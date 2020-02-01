@@ -482,8 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39858aa5f3c9e7445977ed8574cc0456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidadDeMinijuegos: 5
-  loadThis: 2
+  cantidadDeMinijuegos: 3
+  loadThis: 1
   loadOverride: 1
 --- !u!4 &1412467986
 Transform:
@@ -497,7 +497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1640806082
 GameObject:
@@ -556,7 +556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1803278549
 GameObject:

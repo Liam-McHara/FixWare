@@ -8,11 +8,9 @@ public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
     public GameController gameController;
-    public float preTitleTime = 1.0f;   // antes del título
-    public float preGameTime = 1.0f;    // entre título y juego
-    public float preInfoTime = 1.0f;    // entre fin del juego y info
-    public float infoTime = 4.0f;       // info post juego
-
+    public float preTitleTime = 1.0f;
+    public float preGameTime = 1.0f;
+    public float postGameTime = 5.0f;
 
     public Image telon;
     public Text titulo;
@@ -26,8 +24,7 @@ public class MiniBase : MonoBehaviour
 
     bool titleShown = false;
     bool gameStarted = false;
-    bool infoShown = false;
-    float interTimer = 0.0f;        // contador que para usar entre las muestras de elementos de la interfaz
+    float interTimer = 0.0f;        
 
 
     // UI elements (timer, win sprite, fail sprite...)
@@ -52,10 +49,10 @@ public class MiniBase : MonoBehaviour
 
     void UpdateTimer()  
     {
-        interTimer += Time.deltaTime;
         // PRE-GAME
         if (!titleShown)
         {
+            interTimer += Time.deltaTime;
             if (interTimer >= preTitleTime)
             {
                 ShowTitle();
@@ -64,12 +61,12 @@ public class MiniBase : MonoBehaviour
         }
         else if (!gameStarted)
         {
+            interTimer += Time.deltaTime;
             if (interTimer >= preGameTime)
             {
                 StartGame();
             }
         }
-
 
         // IN-GAME
         else if (gameStarted)
@@ -82,19 +79,7 @@ public class MiniBase : MonoBehaviour
         }
 
         // POST-GAME
-        if (win || fail)    // Post-game
-        {
-            if (!infoShown && interTimer >= preInfoTime)  // Show info
-            {
-                interTimer = 0;
-                infoShown = true;
-                ShowInfo();
-            }
-            else if (interTimer >= infoTime)        // Load next minigame
-            {
-                LoadNext();
-            }
-        }
+
     }
 
     public void SetTime(float t)
@@ -128,7 +113,6 @@ public class MiniBase : MonoBehaviour
             win = true;
             check.enabled = true;
             Debug.Log("WIN!");
-            EndGame();
         }
         
     }
@@ -142,26 +126,6 @@ public class MiniBase : MonoBehaviour
             --gameController.vidas;
             cross.enabled = true;
             Debug.Log("Fail!");
-            EndGame();
         }
-    }
-
-    void EndGame()
-    {
-        interTimer = 0;
-        titulo.enabled = false;
-    }
-
-    void ShowInfo()
-    {
-        telon.enabled = true;
-        check.enabled = false;
-        cross.enabled = false;
-        Debug.Log("ShowGameInfo");
-    }
-
-    void LoadNext()
-    {
-        Debug.Log("LoadNext");
     }
 }
