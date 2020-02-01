@@ -27,15 +27,11 @@ public class Clicker : MonoBehaviour
 
     void Update()
     {
+        if (clickCounter <= clicksNecesarios) pos = Input.mousePosition;
+        if (clickCounter >= clicksNecesarios) objectMove.transform.position = pos;
         if (clickCounter >= clicksNecesarios && activateObjectWhenFinish) activableObject.SetActive(true);
         if (clickCounter >= clicksNecesarios && deactivateObjectWhenFinish) deactivableObject.SetActive(false);
         if (clickCounter >= clicksNecesarios && winCondition) miniBase.Win();
-    }
-
-    void OnMouseDown()
-    {
-        pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        objectMove.transform.position = pos;
     }
 
     void Click()
