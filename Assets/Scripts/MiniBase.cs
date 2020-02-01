@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Minijuego : MonoBehaviour
+public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
     public float tiempo = 5;    // Tiempo (segundos) para resolver el minijuego (se va reduciendo)
