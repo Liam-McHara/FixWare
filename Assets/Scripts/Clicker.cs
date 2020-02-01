@@ -14,6 +14,7 @@ public class Clicker : MonoBehaviour
     public bool deactivateObjectWhenFinish = false;  // Bool para hacer que al llegar a los clicks necesarios se desactive un gameobject
     public GameObject activableObject;  // Objeto que se activara
     public GameObject deactivableObject;  // Objeto que se desactivara
+    public GameObject objectMove;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,12 @@ public class Clicker : MonoBehaviour
         if (clickCounter >= clicksNecesarios && activateObjectWhenFinish) activableObject.SetActive(true);
         if (clickCounter >= clicksNecesarios && deactivateObjectWhenFinish) deactivableObject.SetActive(false);
         if (clickCounter >= clicksNecesarios && winCondition) miniBase.Win();
+    }
+
+    void OnMouseDown()
+    {
+        new Vector3 pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        objectMove.transform.position = pos;
     }
 
     void Click()
