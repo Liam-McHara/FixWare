@@ -68,6 +68,7 @@ public class Draggable : MonoBehaviour
         if (deactivateWhenDone) Destroy(this);
     }
 
+    /*
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Area")
@@ -76,5 +77,6 @@ public class Draggable : MonoBehaviour
         }
 
     }
+    */
 
 }
