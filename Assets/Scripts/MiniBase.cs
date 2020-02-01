@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
-    public GameController gameController;  
-    public float tiempo = 5;        // Tiempo (segundos) para resolver el minijuego (se va reduciendo)
+    public GameController gameController;
+    public float preTitleTime = 1.0f;
+    public float preGameTime = 1.0f;
+    float tiempo = 5;        // Tiempo (segundos) para resolver el minijuego (se va reduciendo)
     float tiempoInicial;            // Tiempo (segundos) para resolver el minijuego (guarda el valor inicial)
     public bool win = false;        // Indica si se ha resuelto el minijuego
     public bool fail = false;       // Indica si se ha fallado el minijuego
