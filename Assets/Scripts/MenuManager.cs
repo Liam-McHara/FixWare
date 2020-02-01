@@ -7,9 +7,17 @@ public class MenuManager : MonoBehaviour
 {
     public int cantidadDeMinijuegos;
 
+    //FOR TESTING
+    public int loadThis;            
+    public bool loadOverride;
+
     public void EnterGameplay()
     {
-        int random = Random.Range(1, cantidadDeMinijuegos+1);   // Devuelve un valor entre 1 y cantidadDeMinijuegos
-        SceneManager.LoadScene("mini"+random);
+        if (loadOverride) SceneManager.LoadScene("mini" + loadThis);
+        else
+        {
+            int random = Random.Range(1, cantidadDeMinijuegos + 1);   // Devuelve un valor entre 1 y cantidadDeMinijuegos
+            SceneManager.LoadScene("mini" + random);
+        }
     }
 }
