@@ -13,6 +13,7 @@ public class Draggable : MonoBehaviour
     public bool guachi = false;         // Indica que has ganado
     public bool requireRelease = true;  // Requerir soltar el mouse para evaluar
     public bool deactivateWhenDone = true;  // Desactiva el draggable cuando se completa;
+    public bool draggable = true;  // Define si el objeto se puede mover o no
 
     void Start()
     {
@@ -42,9 +43,12 @@ public class Draggable : MonoBehaviour
 
     void OnMouseDrag()
     {
-        Vector3 currentScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenpoint.z);
-        Vector3 currentPos = Camera.main.ScreenToWorldPoint(currentScreenPoint);
-        transform.position = currentPos;
+        if (draggable)
+        {
+            Vector3 currentScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenpoint.z);
+            Vector3 currentPos = Camera.main.ScreenToWorldPoint(currentScreenPoint);
+            transform.position = currentPos;
+        }
     }
 
 
