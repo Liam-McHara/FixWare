@@ -200,9 +200,21 @@ PrefabInstance:
         type: 3}
       propertyPath: timerBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 93432234}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f398a56c4e669448ba8abf0c400b6b, type: 3}
+--- !u!114 &93432234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5431249227555150680, guid: 12f398a56c4e669448ba8abf0c400b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 93432233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &539999710 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5397561872546208274, guid: 12f398a56c4e669448ba8abf0c400b6b,
