@@ -59,7 +59,7 @@ public class Draggable : MonoBehaviour
 
     void Guachi()   // Puzzle completado!
     {
-        Debug.Log("GUACHI! Has ganado");
+        Debug.Log("GUACHI! Pieza: "+ this.name);
         guachi = true;
         if (deactivateWhenDone) Destroy(this);
     }
