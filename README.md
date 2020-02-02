@@ -8,10 +8,13 @@
 ## Tareas pendientes
 ### Programming
 - [x] GameOver Screen ("GameOver" & Puntuación)
-- [ ] Reducción de tiempo
+- [ ] Reducción de tiempo progresiva
+- [ ] Minijuego inicial (reloj de arena)
+- [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
+- [X] Sonidos fail (quitar "geimover!" y poner globito)
 - [ ] Desktop randomizer
-	- 1~5 iconos
-	- Eliminar Renderer papelera
+	- [ ] 1~3 iconos
+	- [ ] Posiciones aleatorias
 - [x] Script "iniciar minijuego random"
 - [x] Hacer que no se repitan los *(2)* últimos
 - [x] Sistema juego Tiempo/Vidas

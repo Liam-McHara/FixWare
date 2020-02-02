@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ClickManager : MonoBehaviour
+public class GameOverManager : MonoBehaviour
 {
     public Button backButton;
     public Button replayButton;

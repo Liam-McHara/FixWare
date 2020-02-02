@@ -10,13 +10,16 @@ public class GameController : MonoBehaviour
     public int victorias;
     public float tiempo;    // tiempo disponible para resolver los minijuegos
 
-    public int vidInicial;
-    public int victInicial;
-    public int topmark = 0;        // mejor puntuación
+    int vidInicial;
+    int victInicial;
+    public int topmark;     // mejor puntuación
 
     float tiemInicial;
-    int[] lastPlayed;    // Guarda los indices de los ultimos minijuegos jugados
-    int lastIndex;      // guarda el último indice del array lastPlayed, para alternar de uno a otro.
+    int[] lastPlayed;       // Guarda los indices de los ultimos minijuegos jugados
+    int lastIndex;          // Guarda el último indice del array lastPlayed, para alternar de uno a otro.
+
+    //public GameObject notNoobFlag;  // Se crea la primera vez que el jugador pulsa "Play". 
+                                    //     Sirve para personalizar la primera partida y para evitar que se generen múltiples GameControllers.
 
     public int cantidadDeMinijuegos;
     //FOR TESTING
@@ -28,6 +31,13 @@ public class GameController : MonoBehaviour
     {
         vidInicial = vidas;
         tiemInicial = tiempo;
+        topmark = 0;
+       /* GameObject flag = GameObject.FindWithTag("NotANoob");
+        if (flag != null)    // Evitar generación de múltiples GameControllers
+        {
+            Debug.Log("NOT A NOOB");
+            Destroy(this);
+        }*/
     }
 
     public void EnterGameplay()
@@ -40,6 +50,21 @@ public class GameController : MonoBehaviour
             load = random;
         }
         lastPlayed = new int[] { load, load };
+
+        // LOAD SCENE
+        /*
+        GameObject flag = GameObject.FindWithTag("NotANoob");
+        if (flag == null)    // For the first time...
+        {
+            Instantiate(notNoobFlag, this.transform);
+            
+        }
+        else
+        {
+
+        }*/
+            
+
         SceneManager.LoadScene("mini" + load);
     }
 
