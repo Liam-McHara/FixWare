@@ -7,6 +7,7 @@ public class InfoShow : MonoBehaviour
 {
     public MiniBase miniBase;
     public Image[] vidas;
+    public Text scoreText;
 
     public void Show()
     {
@@ -18,6 +19,7 @@ public class InfoShow : MonoBehaviour
                 Debug.Log("Enabling: " + i);
                 vidas[i - 1].enabled = true;
             }
+            scoreText.enabled = true;
         }
     }
     public void Hide()
@@ -27,5 +29,6 @@ public class InfoShow : MonoBehaviour
             Debug.Log("Disabling: " + i);
             vidas[i - 1].enabled = false;
         }
+        scoreText.enabled = false;
     }
 }

@@ -142,11 +142,11 @@ RectTransform:
   m_LocalScale: {x: 0.39502, y: 0.39502, z: 0.39502}
   m_Children: []
   m_Father: {fileID: 2014280732}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 661, y: 225}
+  m_AnchoredPosition: {x: 450, y: 216.68}
   m_SizeDelta: {x: 805.4, y: 595.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83110652
@@ -174,13 +174,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 80
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ver: 1.2'
+  m_Text: 'ver: 1.3
+
+    underground edition'
 --- !u!222 &83110653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -337,6 +339,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083363870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083363871}
+  - component: {fileID: 1083363873}
+  - component: {fileID: 1083363872}
+  m_Layer: 5
+  m_Name: Title (sombra amarilla)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1083363871
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083363870}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.37890625, y: 0.37890625, z: 0.37890625}
+  m_Children: []
+  m_Father: {fileID: 2014280732}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -265}
+  m_SizeDelta: {x: 1598.03, y: 830}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1083363872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083363870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8588044, g: 1, b: 0.41960788, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ac90a7d59de30ae4eaa1bf28bf502e8a, type: 3}
+    m_FontSize: 300
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'FIX
+
+    WARE'
+--- !u!222 &1083363873
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083363870}
+  m_CullTransparentMesh: 0
 --- !u!1 &1273502213
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +448,7 @@ RectTransform:
   m_LocalScale: {x: 0.39502, y: 0.39502, z: 0.39502}
   m_Children: []
   m_Father: {fileID: 2014280732}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -405,23 +486,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2D artists:
-
-    Alba Gracia
-
-    Guillem Cusido
-
-
-    Programers and builders:
-
-    Guillem Lajara
-
-    Alvaro Arriazu
-
-
-    Coordinator and Designer:
-
-    Albert Lajara'
+  m_Text: "2D artists:\n  Alba Gracia \n  Guillem Cusido\n\nProgramers & builders:\n
+    \ Guillem Lajara\n  Alvaro Arriazu\n\nCoordinator & Designer:\n  Albert Lajara"
 --- !u!222 &1273502216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -460,7 +526,7 @@ RectTransform:
   m_LocalScale: {x: 0.37890625, y: 0.37890625, z: 0.37890625}
   m_Children: []
   m_Father: {fileID: 2014280732}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -521,7 +587,7 @@ GameObject:
   - component: {fileID: 1494542602}
   - component: {fileID: 1494542601}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,11 +677,11 @@ RectTransform:
   m_LocalScale: {x: 0.39502, y: 0.39502, z: 0.39502}
   m_Children: []
   m_Father: {fileID: 2014280732}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 431, y: -399}
+  m_AnchoredPosition: {x: 437, y: -206}
   m_SizeDelta: {x: 805.4, y: 595.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630157007
@@ -643,13 +709,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 80
-    m_Alignment: 0
+    m_Alignment: 8
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: for mouse only
+  m_Text: For mouse only !
 --- !u!222 &1630157008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -851,7 +917,7 @@ RectTransform:
   m_LocalScale: {x: 0.37890625, y: 0.37890625, z: 0.37890625}
   m_Children: []
   m_Father: {fileID: 2014280732}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -975,7 +1041,7 @@ RectTransform:
   m_LocalScale: {x: 0.37890625, y: 0.37890625, z: 0.37890625}
   m_Children: []
   m_Father: {fileID: 2014280732}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1159,6 +1225,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1494542600}
+  - {fileID: 1083363871}
   - {fileID: 1359818840}
   - {fileID: 1803278550}
   - {fileID: 1960088893}

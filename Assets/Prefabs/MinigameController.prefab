@@ -258,6 +258,7 @@ MonoBehaviour:
   - {fileID: 3132622012492393262}
   - {fileID: 3190760435461764889}
   - {fileID: 6297017908876881729}
+  scoreText: {fileID: 503763177591149205}
 --- !u!1 &3086824587788085505
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,10 +738,10 @@ MonoBehaviour:
   failSound: {fileID: 590949778373396464}
   gameController: {fileID: 0}
   infoShow: {fileID: 2239548290815330335}
-  preTitleTime: 1
+  preTitleTime: 0.5
   preGameTime: 1
   preInfoTime: 1
-  infoTime: 4
+  infoTime: 3
   telon: {fileID: 7759257435700239797}
   titulo: {fileID: 2007890472371902369}
   scoreText: {fileID: 503763177591149205}
