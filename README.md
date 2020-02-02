@@ -8,9 +8,11 @@
 ## Tareas pendientes
 ### Programming
 - [x] Script "iniciar minijuego random"
-- [ ] Hacer que no se repitan los *(5)* últimos
-- [ ] Sistema juego Tiempo/Vidas
+- [x] Hacer que no se repitan los *(2)* últimos
+- [x] Sistema juego Tiempo/Vidas
 - [ ] Script CambioCursor
+- [x] GameOver
+- [ ] Randomizar posicion elementos (iconos, noodles, tirita...)
 - Mecanicas de juego
   - [ ] Estarse quieto / no hacer clic *
   - [x] Clicar en 1 sitio 

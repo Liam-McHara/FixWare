@@ -127,10 +127,9 @@ public class MiniBase : MonoBehaviour
         {
             // HAS GANADO!!  ueee
             // aqui se hacen las cositas de cuando se gana (sumar puntos, feedback positivo, pasar al siguiente minijuego...)
-            ++gameController.victorias;
+            gameController.Win();
             win = true;
             check.enabled = true;
-            Debug.Log("WIN!");
             EndGame();
         }
         
@@ -142,9 +141,8 @@ public class MiniBase : MonoBehaviour
             // HAS PERDIDO...  buuuu
             // aqui se hacen las cositas de cuando se pierde (perder una vida, feedback negativo, pasar al siguiente minijuego, game over...)
             fail = true;
-            --gameController.vidas;
+            gameController.Fail();
             cross.enabled = true;
-            Debug.Log("Fail!");
             EndGame();
         }
     }

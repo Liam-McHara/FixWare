@@ -495,8 +495,9 @@ MonoBehaviour:
   vidas: 4
   victorias: 0
   tiempo: 5
-  cantidadDeMinijuegos: 8
-  loadThis: 8
+  lastPlayed: 
+  cantidadDeMinijuegos: 3
+  loadThis: 3
   loadOverride: 1
 --- !u!4 &1640806085
 Transform:
