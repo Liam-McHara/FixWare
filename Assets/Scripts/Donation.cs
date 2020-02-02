@@ -11,12 +11,14 @@ public class Donation : MonoBehaviour
     public int donAprox = 100000;
     int don = 0;
     public Text counterText;
+    public Image treelon;
     MiniBase miniBase;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        treelon.enabled = false;
         counterText.text = ""+don;
         miniBase = gameObject.GetComponentInParent<MiniBase>();
         Button btn = boton.GetComponent<Button>();
@@ -31,6 +33,7 @@ public class Donation : MonoBehaviour
         if (don >= donNecesaria)
         {
             don = donNecesaria;
+            treelon.enabled = true;
             miniBase.Win();
         }
         // UI
