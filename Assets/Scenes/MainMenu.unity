@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657a5298dd6ea954cb973ef778b7bead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 4
   victorias: 0
   tiempo: 5
   topmark: 0
