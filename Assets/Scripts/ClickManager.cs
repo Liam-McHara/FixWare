@@ -29,7 +29,7 @@ public class ClickManager : MonoBehaviour
     public void Replay()
     {
         Debug.Log("Replay!");
-        gc.LoadNext();
+        gc.Replay();
     }
 
     public void Exit()

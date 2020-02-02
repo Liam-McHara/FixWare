@@ -95,4 +95,10 @@ public class GameController : MonoBehaviour
         Debug.Log("Bye Bye");
         Application.Quit();
     }
+    
+    public void Replay()
+    {
+        victorias = 0;
+        LoadNext();
+    }
 }

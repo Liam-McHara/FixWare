@@ -547,12 +547,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657a5298dd6ea954cb973ef778b7bead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 4
+  vidas: 1
   victorias: 0
   tiempo: 5
   topmark: 0
   cantidadDeMinijuegos: 9
-  loadThis: 9
+  loadThis: 6
   loadOverride: 0
 --- !u!4 &1640806085
 Transform:
