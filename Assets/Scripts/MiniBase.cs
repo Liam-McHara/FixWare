@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
+
+    public AudioSource winSound;
+    public AudioSource failSound;
+
     public GameController gameController;
     public InfoShow infoShow;
     public float preTitleTime = 1.0f;
@@ -128,6 +132,7 @@ public class MiniBase : MonoBehaviour
             // HAS GANADO!!  ueee
             // aqui se hacen las cositas de cuando se gana (sumar puntos, feedback positivo, pasar al siguiente minijuego...)
             gameController.Win();
+            winSound.Play();
             win = true;
             check.enabled = true;
             EndGame();
@@ -142,6 +147,7 @@ public class MiniBase : MonoBehaviour
             // aqui se hacen las cositas de cuando se pierde (perder una vida, feedback negativo, pasar al siguiente minijuego, game over...)
             fail = true;
             gameController.Fail();
+            failSound.Play();
             cross.enabled = true;
             EndGame();
         }
