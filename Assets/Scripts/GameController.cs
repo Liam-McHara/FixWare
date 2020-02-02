@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
@@ -11,15 +12,28 @@ public class GameController : MonoBehaviour
 
     int vidInicial;
     int victInicial;
+    public int topmark = 0;        // mejor puntuación
+
     float tiemInicial;
-    public int[] lastPlayed;    // Guarda los indices de los ultimos minijuegos jugados
+    int[] lastPlayed;    // Guarda los indices de los ultimos minijuegos jugados
     int lastIndex;      // guarda el último indice del array lastPlayed, para alternar de uno a otro.
 
     public int cantidadDeMinijuegos;
 
+    // UI
+    public Text topmarkText;
+    public Text scoreText;
+
     //FOR TESTING
     public int loadThis;
     public bool loadOverride;
+
+
+    void Start()
+    {
+        vidInicial = vidas;
+        tiemInicial = tiempo;
+    }
 
     public void EnterGameplay()
     {
@@ -36,7 +50,7 @@ public class GameController : MonoBehaviour
 
     public void LoadNext()  // Carga el siguiente minijuego, comprobando que no se repitan los 2 ultimos
     {
-        int random = Random.Range(1, cantidadDeMinijuegos + 1);
+        int random = Random.Range(1, cantidadDeMinijuegos + 1); // Selecciona uno aleatorio
         if (lastIndex == 0)
         {
             while (random == lastPlayed[0] || random == lastPlayed[1])  // Comprueba que no se repita el minijuego
@@ -53,7 +67,7 @@ public class GameController : MonoBehaviour
             lastPlayed[0] = random;
             lastIndex = 0;
         }
-
+        // Carga la siguiente escena
         SceneManager.LoadScene("mini" + random);
     }
 
@@ -73,6 +87,11 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("GAME OVER");
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GameOverScene");
+        if (victorias > topmark) topmark = victorias;
+
+        // Restaurar valores iniciales
+        vidas = vidInicial;
+        tiempo = tiemInicial;
     }
 }
