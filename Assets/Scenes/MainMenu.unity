@@ -547,13 +547,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657a5298dd6ea954cb973ef778b7bead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 4
   victorias: 0
   tiempo: 5
   topmark: 0
   cantidadDeMinijuegos: 9
-  loadThis: 7
-  loadOverride: 0
+  loadThis: 3
+  loadOverride: 1
 --- !u!4 &1640806085
 Transform:
   m_ObjectHideFlags: 0
@@ -580,7 +580,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 245e7aaa195b78f4e8edaec35a6ec302, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.11
   m_Pitch: 1
   Loop: 1
   Mute: 0

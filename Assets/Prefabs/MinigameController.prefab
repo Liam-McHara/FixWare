@@ -732,8 +732,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f8646ace48731642a5cca3b600d0f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winSound: {fileID: 0}
-  failSound: {fileID: 0}
+  winSound: {fileID: 6015943696813866606}
+  failSound: {fileID: 590949778373396464}
   gameController: {fileID: 0}
   infoShow: {fileID: 2239548290815330335}
   preTitleTime: 1
