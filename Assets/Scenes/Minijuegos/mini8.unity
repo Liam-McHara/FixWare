@@ -310,6 +310,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2007890472371902369, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_Text
+      value: Repair the TV!
+      objectReference: {fileID: 0}
     - target: {fileID: 2534499400008721059, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_LocalPosition.z
