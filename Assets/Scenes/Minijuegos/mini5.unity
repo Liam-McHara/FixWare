@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boton: {fileID: 468590338}
-  clicksNecesarios: 15
+  clicksNecesarios: 3
   clickCounter: 0
   winCondition: 1
   activateObjectWhenFinish: 1
