@@ -552,8 +552,8 @@ MonoBehaviour:
   tiempo: 5
   topmark: 0
   cantidadDeMinijuegos: 8
-  loadThis: 3
-  loadOverride: 0
+  loadThis: 9
+  loadOverride: 1
 --- !u!4 &1640806085
 Transform:
   m_ObjectHideFlags: 0
