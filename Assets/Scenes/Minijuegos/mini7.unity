@@ -241,19 +241,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piezas:
   - {fileID: 265963128}
-  - {fileID: 0}
   - {fileID: 418694709}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 671409157}
-  - {fileID: 0}
   - {fileID: 1514962148}
---- !u!224 &226692547 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2534499400008721059, guid: 12f398a56c4e669448ba8abf0c400b6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 226692544}
-  m_PrefabAsset: {fileID: 0}
+  - {fileID: 671409157}
 --- !u!1001 &265963126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -261,6 +251,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1009263440}
     m_Modifications:
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1838741328}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -356,83 +351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c496451bf09f44f926017125fc7615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &272564169
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 272564170}
-  - component: {fileID: 272564172}
-  - component: {fileID: 272564171}
-  m_Layer: 5
-  m_Name: Recylcle Bin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &272564170
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272564169}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0539289, y: 1.0539289, z: 1.0539289}
-  m_Children: []
-  m_Father: {fileID: 226692547}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 549, y: -625}
-  m_SizeDelta: {x: 771, y: 168.90002}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &272564171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272564169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: ac90a7d59de30ae4eaa1bf28bf502e8a, type: 3}
-    m_FontSize: 24
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 90
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Recylcle \nBin"
---- !u!222 &272564172
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272564169}
-  m_CullTransparentMesh: 0
 --- !u!1001 &418694707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,6 +358,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1009263440}
     m_Modifications:
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1838741328}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -478,7 +401,7 @@ PrefabInstance:
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
@@ -513,7 +436,7 @@ PrefabInstance:
     - target: {fileID: 4908294064982703877, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_Name
-      value: Icon (3)
+      value: Icon 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf243c6b96164344aaf2460471822411, type: 3}
@@ -611,6 +534,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1009263440}
     m_Modifications:
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1838741328}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -649,7 +577,7 @@ PrefabInstance:
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
@@ -731,7 +659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713896471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.98, y: 0.21, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.01, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1838741328}
@@ -816,8 +744,8 @@ Transform:
   - {fileID: 1838741328}
   - {fileID: 265963127}
   - {fileID: 418694708}
-  - {fileID: 671409156}
   - {fileID: 1514962147}
+  - {fileID: 671409156}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -875,7 +803,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8a79f2c7e02806f4a8bb3010b331b375, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7997f162581bd224ca5adccf3e749d5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -894,8 +822,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066539215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.495903, y: -0.45667073, z: 2.9153643}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 6.495903, y: -0.45667, z: 2.9153643}
+  m_LocalScale: {x: 0.51925, y: 0.41046876, z: 1}
   m_Children: []
   m_Father: {fileID: 1009263440}
   m_RootOrder: 0
@@ -1165,6 +1093,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1009263440}
     m_Modifications:
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1838741328}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1203,7 +1136,7 @@ PrefabInstance:
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
@@ -1297,12 +1230,12 @@ PrefabInstance:
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.26
+      value: 8.02
       objectReference: {fileID: 0}
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.94
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
