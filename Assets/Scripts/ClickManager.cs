@@ -31,4 +31,9 @@ public class ClickManager : MonoBehaviour
         Debug.Log("Replay!");
         gc.LoadNext();
     }
+
+    public void Exit()
+    {
+
+    }
 }

@@ -94,4 +94,10 @@ public class GameController : MonoBehaviour
         vidas = vidInicial;
         tiempo = tiemInicial;
     }
+    
+    public void Exit()
+    {
+        Debug.Log("Bye Bye");
+        Application.Quit();
+    }
 }
