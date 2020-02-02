@@ -548,10 +548,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 1
   victorias: 0
-  tiempo: 10
+  tiempo: 5
   topmark: 0
-  cantidadDeMinijuegos: 7
-  loadThis: 9
+  cantidadDeMinijuegos: 9
+  loadThis: 7
   loadOverride: 1
 --- !u!4 &1640806085
 Transform:
