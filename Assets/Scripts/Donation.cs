@@ -29,7 +29,7 @@ public class Donation : MonoBehaviour
     void Click()
     {
         don += donAprox - Random.Range(0, 999);
-
+        Debug.Log("DONAR");
         if (don >= donNecesaria)
         {
             don = donNecesaria;
