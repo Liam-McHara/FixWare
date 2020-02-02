@@ -10,8 +10,8 @@ public class GameController : MonoBehaviour
     public int victorias;
     public float tiempo;    // tiempo disponible para resolver los minijuegos
 
-    int vidInicial;
-    int victInicial;
+    public int vidInicial;
+    public int victInicial;
     public int topmark = 0;        // mejor puntuación
 
     float tiemInicial;
