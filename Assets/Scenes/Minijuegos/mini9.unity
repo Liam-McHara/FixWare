@@ -339,18 +339,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 440352933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1b6c1a32e20f434aa471a94605a98fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e94ce6690fd8d5438a813397b6642fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   boton: {fileID: 325779053}
-  clicksNecesarios: 11
-  clickCounter: 0
-  winCondition: 1
-  activateObjectWhenFinish: 0
-  deactivateObjectWhenFinish: 1
-  activableObject: {fileID: 0}
-  deactivableObject: {fileID: 0}
-  objectMove: {fileID: 0}
+  donNecesaria: 1000000
+  donAprox: 100000
+  counterText: {fileID: 1397324576}
 --- !u!1 &655246185
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +739,7 @@ GameObject:
   - component: {fileID: 1397324577}
   - component: {fileID: 1397324576}
   m_Layer: 5
-  m_Name: Text
+  m_Name: counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

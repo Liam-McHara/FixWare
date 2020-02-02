@@ -19,11 +19,6 @@ public class GameController : MonoBehaviour
     int lastIndex;      // guarda el último indice del array lastPlayed, para alternar de uno a otro.
 
     public int cantidadDeMinijuegos;
-
-    // UI
-    public Text topmarkText;
-    public Text scoreText;
-
     //FOR TESTING
     public int loadThis;
     public bool loadOverride;
