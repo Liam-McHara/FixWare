@@ -256,6 +256,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1838741328}
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 1717297983}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -325,6 +330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908294064982703875, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703877, guid: cf243c6b96164344aaf2460471822411,
         type: 3}

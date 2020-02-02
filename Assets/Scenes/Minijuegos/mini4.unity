@@ -364,6 +364,26 @@ PrefabInstance:
       propertyPath: timerBar
       value: 
       objectReference: {fileID: 226692547}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 944.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 168.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347098275778990237, guid: 12f398a56c4e669448ba8abf0c400b6b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -225.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f398a56c4e669448ba8abf0c400b6b, type: 3}
 --- !u!1 &226692545 stripped
@@ -759,6 +779,7 @@ MonoBehaviour:
   requireRelease: 0
   deactivateWhenDone: 1
   draggable: 0
+  icon: {fileID: 0}
 --- !u!1 &4908294064233817086
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +880,7 @@ MonoBehaviour:
   requireRelease: 0
   deactivateWhenDone: 1
   draggable: 1
+  icon: {fileID: 0}
 --- !u!23 &4908294064276316862
 MeshRenderer:
   m_ObjectHideFlags: 0

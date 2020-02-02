@@ -14,6 +14,7 @@ public class Draggable : MonoBehaviour
     public bool requireRelease = true;  // Requerir soltar el mouse para evaluar
     public bool deactivateWhenDone = true;  // Desactiva el draggable cuando se completa;
     public bool draggable = true;  // Define si el objeto se puede mover o no
+    public GameObject icon;
 
     void Start()
     {
@@ -65,7 +66,7 @@ public class Draggable : MonoBehaviour
     {
         Debug.Log("GUACHI! Pieza: "+ this.name);
         guachi = true;
-        if (deactivateWhenDone) Destroy(this);
+        if (deactivateWhenDone) Destroy(icon);
     }
 
     /*
