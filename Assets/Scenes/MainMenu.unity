@@ -767,15 +767,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657a5298dd6ea954cb973ef778b7bead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 4
   victorias: 0
   tiempo: 5
   topmark: 0
-  notNoobFlag: {fileID: 5341351255715342172, guid: c8fef8fe7e0a97d46ac9b1bd3c4dcba8,
-    type: 3}
   cantidadDeMinijuegos: 10
-  loadThis: 8
-  loadOverride: 1
+  loadThis: 0
+  loadOverride: 0
 --- !u!4 &1640806085
 Transform:
   m_ObjectHideFlags: 0

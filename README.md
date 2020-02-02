@@ -9,7 +9,11 @@
 ### Programming
 - [x] GameOver Screen ("GameOver" & Puntuación)
 - [ ] Reducción de tiempo progresiva
+- [ ] Sonidos Recycle
+- [ ] Sonidos Restore Meme
+- [ ] Sonidos DonateButton
 - [ ] Minijuego inicial (reloj de arena)
+- [ ] Corregir Target sobre Dragable (no se puede agarrar)
 - [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
 - [X] Sonidos fail (quitar "geimover!" y poner globito)
 - [ ] Desktop randomizer
