@@ -7,7 +7,7 @@
 
 ## Tareas pendientes
 ### Programming
-- [ ] GameOver Screen ("GameOver" & Puntuación)
+- [x] GameOver Screen ("GameOver" & Puntuación)
 - [ ] Reducción de tiempo
 - [ ] Desktop randomizer
 	- 1~5 iconos
