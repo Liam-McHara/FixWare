@@ -18,13 +18,18 @@ public class GameController : MonoBehaviour
     int[] lastPlayed;       // Guarda los indices de los ultimos minijuegos jugados
     int lastIndex;          // Guarda el último indice del array lastPlayed, para alternar de uno a otro.
 
+    public AudioSource musicaFondo;
+
     //public GameObject notNoobFlag;  // Se crea la primera vez que el jugador pulsa "Play". 
-                                    //     Sirve para personalizar la primera partida y para evitar que se generen múltiples GameControllers.
+    //     Sirve para personalizar la primera partida y para evitar que se generen múltiples GameControllers.
+
+    public bool tutorialFirst;
 
     public int cantidadDeMinijuegos;
     //FOR TESTING
     public int loadThis;
     public bool loadOverride;
+    
 
 
     void Start()
@@ -40,7 +45,20 @@ public class GameController : MonoBehaviour
         }*/
     }
 
-    public void EnterGameplay()
+    public void PlayButton()
+    {
+        if (tutorialFirst) StartTutorial();
+        else StartGame();
+    }
+
+    public void StartTutorial()
+    {
+        Debug.Log("Starting Tutorial...");
+        SceneManager.LoadScene("Tutorial");
+        lastPlayed = new int[] { 0, 0 };
+    }
+
+    public void StartGame()
     {
         int load;
         if (loadOverride) load = loadThis;
@@ -63,8 +81,9 @@ public class GameController : MonoBehaviour
         {
 
         }*/
-            
 
+        
+        musicaFondo.Play();
         SceneManager.LoadScene("mini" + load);
     }
 

@@ -6,7 +6,7 @@ public class Puzzle : MonoBehaviour
 {
     public Draggable[] piezas;  // Piezas del puzzle
     MiniBase miniBase;
-    bool completado = false;
+    bool completado = false;    // SE PUEDE ELIMINAR  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ?
 
     void Start()
     {

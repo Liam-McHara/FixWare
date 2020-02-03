@@ -18,6 +18,8 @@ public class MiniBase : MonoBehaviour
     public float preInfoTime = 1.0f;
     public float infoTime = 4.0f;
 
+    // UI elements (timer, win sprite, fail sprite...)
+    public Image timerBar;
     public Image telon;
     public Text titulo;
     public Text scoreText;
@@ -35,15 +37,13 @@ public class MiniBase : MonoBehaviour
     float interTimer = 0.0f;        
 
 
-    // UI elements (timer, win sprite, fail sprite...)
-    public Image timerBar;
+
 
     void Start()
     {
         infoShow.Hide();
         telon.enabled = true;
         titulo.enabled = false;
-        // scoreText.enabled = false;
         check.enabled = false;
         cross.enabled = false;
         gameController = GameObject.Find("GameController").GetComponent<GameController>();

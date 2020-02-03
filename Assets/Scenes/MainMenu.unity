@@ -180,9 +180,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ver: 1.3
+  m_Text: 'ver: 1.4
 
-    underground edition'
+    nightcore edition'
 --- !u!222 &83110653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -733,9 +733,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1640806085}
+  - component: {fileID: 1640806086}
   - component: {fileID: 1640806084}
   - component: {fileID: 1640806083}
-  - component: {fileID: 1640806086}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -771,6 +771,8 @@ MonoBehaviour:
   victorias: 0
   tiempo: 5
   topmark: 0
+  musicaFondo: {fileID: 1640806086}
+  tutorialFirst: 1
   cantidadDeMinijuegos: 10
   loadThis: 0
   loadOverride: 0
@@ -799,7 +801,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 245e7aaa195b78f4e8edaec35a6ec302, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.11
   m_Pitch: 1
   Loop: 1
@@ -963,7 +965,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1640806084}
-        m_MethodName: EnterGameplay
+        m_MethodName: PlayButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
