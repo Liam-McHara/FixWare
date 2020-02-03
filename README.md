@@ -1,5 +1,7 @@
 # FixWare
 
+PLAY IT HERE! -> https://lagjara.itch.io/fixware2
+
 ## Lista de Minijuegos
 - **mini1** : *Testing*
 - **mini2** : *Testing*
