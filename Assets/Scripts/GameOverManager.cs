@@ -24,12 +24,14 @@ public class GameOverManager : MonoBehaviour
     public void GoBack()
     {
         Debug.Log("GoBack!");
+        gc.sonidoClic.Play();
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Replay()
     {
         Debug.Log("Replay!");
+        gc.sonidoClic.Play();
         gc.Replay();
     }
 

@@ -18,33 +18,29 @@ public class GameController : MonoBehaviour
     int[] lastPlayed;       // Guarda los indices de los ultimos minijuegos jugados
     int lastIndex;          // Guarda el último indice del array lastPlayed, para alternar de uno a otro.
 
+    // AUDIO
     public AudioSource musicaJuego;
-    public AudioSource musicaMenu;      // (Sin asignar) Para los momentos más tranqui
-
-    public bool tutorialFirst;
+    public AudioSource musicaMenu;
+    public AudioSource sonidoClic;
 
     public int cantidadDeMinijuegos;
-    //FOR TESTING
-    public int loadThis;
-    public bool loadOverride;
-    
+    public int noRepetir;
 
+    public bool tutorialFirst;
+    //FOR TESTING
+    public bool loadOverride;
+    public int loadThis;
 
     void Start()
     {
         vidInicial = vidas;
         tiemInicial = tiempo;
         topmark = 0;
-       /* GameObject flag = GameObject.FindWithTag("NotANoob");
-        if (flag != null)    // Evitar generación de múltiples GameControllers
-        {
-            Debug.Log("NOT A NOOB");
-            Destroy(this);
-        }*/
     }
 
     public void PlayButton()
     {
+        sonidoClic.Play();
         if (tutorialFirst) StartTutorial();
         else StartGame();
     }
@@ -53,19 +49,20 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Starting Tutorial...");
         SceneManager.LoadScene("Tutorial");
-        lastPlayed = new int[] { 0, 0, 0, 0, 0 };
+        lastPlayed = new int[noRepetir];
     }
 
     public void StartGame()
     {
-        int load;
-        if (loadOverride) load = loadThis;
-        else
+        int load;                   // Indice del minijuego a cargar...
+        if (loadOverride) load = loadThis;                      // Fijado o
+        else load = Random.Range(1, cantidadDeMinijuegos + 1);  // aleatorio
+        lastPlayed = new int[noRepetir];    
+        lastPlayed[0] = load;
+        for (int i = 1; i<noRepetir; ++i)
         {
-            int random = Random.Range(1, cantidadDeMinijuegos + 1);   // Devuelve un valor entre 1 y cantidadDeMinijuegos
-            load = random;
+            lastPlayed[i] = 0;
         }
-        lastPlayed = new int[] { load, load, load, load, load };
         
         musicaJuego.Play();
         SceneManager.LoadScene("mini" + load);
@@ -83,7 +80,7 @@ public class GameController : MonoBehaviour
         }
 
         // Guarda el nuevo índice para no repetir minijuego
-        if (lastIndex == 4)
+        if (lastIndex == noRepetir-1)
         {
             lastPlayed[0] = random;
             lastIndex = 0;
@@ -125,6 +122,7 @@ public class GameController : MonoBehaviour
     public void Exit()
     {
         Debug.Log("Bye Bye");
+        sonidoClic.Play();
         Application.Quit();
     }
     

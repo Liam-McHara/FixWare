@@ -10,13 +10,14 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 ## Tareas pendientes
 ### Programming
 - [x] Script "iniciar minijuego random"
-- [x] Hacer que no se repitan los *(5)* últimos
+- [x] Hacer que no se repitan los *X* últimos
 - [x] Sistema juego Tiempo/Vidas
 - [x] GameOver -> (volver al menú)
 - [x] GameOver Screen ("GameOver" & Puntuación)
 - [x] Minijuego inicial (reloj de arena)
 - [x] Animar reloj --> Barra de tiempo
 - [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
+	- [ ] Corregir doble música con elegancia 
 - [ ] Reducción de tiempo progresiva
 - [ ] Arreglar animación del tutorial (en reproductor web no sale bien)
 - [ ] Corregir Target sobre Dragable (no se puede agarrar)
