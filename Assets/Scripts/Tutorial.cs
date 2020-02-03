@@ -22,7 +22,7 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
-        titulo.enabled = true;
+        titulo.enabled = false;
         check.enabled = false;
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
@@ -33,12 +33,6 @@ public class Tutorial : MonoBehaviour
         {
             Win();
         }
-    }
-
-    void ShowTitle()
-    {
-        Debug.Log("ShowTitle :D");
-        titulo.enabled = true;
     }
 
 
