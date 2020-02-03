@@ -180,9 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ver: 1.4.1
-
-    nightcore edition'
+  m_Text: 'ver: 1.4.2'
 --- !u!222 &83110653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -299,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657a5298dd6ea954cb973ef778b7bead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
+  vidas: 4
   victorias: 0
   tiempo: 5
   topmark: 0
@@ -307,7 +305,7 @@ MonoBehaviour:
   musicaMenu: {fileID: 1860610576}
   sonidoClic: {fileID: 1952121432}
   cantidadDeMinijuegos: 10
-  noRepetir: 5
+  noRepetir: 6
   tutorialFirst: 1
   loadOverride: 0
   loadThis: 0

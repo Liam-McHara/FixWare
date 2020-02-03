@@ -18,8 +18,8 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 - [x] Animar reloj --> Barra de tiempo
 - [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
 	- [ ] Corregir doble música con elegancia 
-- [ ] Reducción de tiempo progresiva
-- [ ] Arreglar animación del tutorial (en reproductor web no sale bien)
+- [ ] *Reducción de tiempo progresiva*
+- [ ] *Añadir soporte para diferentes resoluciones*
 - [ ] Corregir Target sobre Dragable (no se puede agarrar)
 - [ ] Desktop randomizer
 	- [ ] 1~3 iconos
@@ -41,3 +41,5 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 - [ ] Sonidos Recycle
 - [ ] Sonidos Restore Meme
 - [ ] Sonidos DonateButton
+
+# ¡¡QUEREMOS MÁS MINIJUEGOS!!
