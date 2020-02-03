@@ -52,8 +52,7 @@ public class Tutorial : MonoBehaviour
     public void EndTutorial()
     {
         Debug.Log("Tutorial Complete!");
-        gameController.musicaFondo.Play();
+        gameController.musicaJuego.Play();
         gameController.LoadNext();
     }
-
 }

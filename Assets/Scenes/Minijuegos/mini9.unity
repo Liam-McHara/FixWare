@@ -124,6 +124,16 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 959901363}
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: requireRelease
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908294064982703872, guid: cf243c6b96164344aaf2460471822411,
+        type: 3}
+      propertyPath: deactivateWhenDone
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4908294064982703873, guid: cf243c6b96164344aaf2460471822411,
         type: 3}
       propertyPath: m_LocalPosition.x

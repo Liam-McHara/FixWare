@@ -18,10 +18,8 @@ public class GameController : MonoBehaviour
     int[] lastPlayed;       // Guarda los indices de los ultimos minijuegos jugados
     int lastIndex;          // Guarda el último indice del array lastPlayed, para alternar de uno a otro.
 
-    public AudioSource musicaFondo;
-
-    //public GameObject notNoobFlag;  // Se crea la primera vez que el jugador pulsa "Play". 
-    //     Sirve para personalizar la primera partida y para evitar que se generen múltiples GameControllers.
+    public AudioSource musicaJuego;
+    public AudioSource musicaMenu;      // (Sin asignar) Para los momentos más tranqui
 
     public bool tutorialFirst;
 
@@ -55,7 +53,7 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Starting Tutorial...");
         SceneManager.LoadScene("Tutorial");
-        lastPlayed = new int[] { 0, 0 };
+        lastPlayed = new int[] { 0, 0, 0, 0, 0 };
     }
 
     public void StartGame()
@@ -67,45 +65,35 @@ public class GameController : MonoBehaviour
             int random = Random.Range(1, cantidadDeMinijuegos + 1);   // Devuelve un valor entre 1 y cantidadDeMinijuegos
             load = random;
         }
-        lastPlayed = new int[] { load, load };
-
-        // LOAD SCENE
-        /*
-        GameObject flag = GameObject.FindWithTag("NotANoob");
-        if (flag == null)    // For the first time...
-        {
-            Instantiate(notNoobFlag, this.transform);
-            
-        }
-        else
-        {
-
-        }*/
-
+        lastPlayed = new int[] { load, load, load, load, load };
         
-        musicaFondo.Play();
+        musicaJuego.Play();
         SceneManager.LoadScene("mini" + load);
     }
 
     public void LoadNext()  // Carga el siguiente minijuego, comprobando que no se repitan los 2 ultimos
     {
-        int random = Random.Range(1, cantidadDeMinijuegos + 1); // Selecciona uno aleatorio
-        if (lastIndex == 0)
-        {
-            while (random == lastPlayed[0] || random == lastPlayed[1])  // Comprueba que no se repita el minijuego
-            {
-                random = Random.Range(1, cantidadDeMinijuegos + 1); 
-            }
+        int random = Random.Range(1, cantidadDeMinijuegos + 1);     // Selecciona uno aleatorio
 
-            lastPlayed[1] = random;     // Guarda el nuevo índice para no repetir minijuego
-            lastIndex = 1;
-        }
-        else
+        while (random == lastPlayed[0] || random == lastPlayed[1]   // Comprueba que no se repita el minijuego
+            || random == lastPlayed[2] || random == lastPlayed[3] 
+            || random == lastPlayed[4])
         {
-            while (random == lastPlayed[0] || random == lastPlayed[1]) random = Random.Range(1, cantidadDeMinijuegos + 1);
+            random = Random.Range(1, cantidadDeMinijuegos + 1);
+        }
+
+        // Guarda el nuevo índice para no repetir minijuego
+        if (lastIndex == 4)
+        {
             lastPlayed[0] = random;
             lastIndex = 0;
         }
+        else
+        {
+            lastPlayed[lastIndex+1] = random;
+            ++lastIndex;
+        }
+
         // Carga la siguiente escena
         SceneManager.LoadScene("mini" + random);
     }
@@ -140,9 +128,10 @@ public class GameController : MonoBehaviour
         Application.Quit();
     }
     
-    public void Replay()
+    public void Replay()        // Empieza una nueva partida
     {
         victorias = 0;
+        musicaJuego.Play();
         LoadNext();
     }
 }

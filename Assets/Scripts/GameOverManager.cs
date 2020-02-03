@@ -15,7 +15,8 @@ public class GameOverManager : MonoBehaviour
     void Start()
     {
         gc = GameObject.Find("GameController").GetComponent<GameController>();
-
+        gc.musicaJuego.Stop();
+        //gc.musicaMenu.Play();
         scoreText.text = "Score: " + gc.victorias;
         topmarkText.text = "TopMark: " + gc.topmark;
     }

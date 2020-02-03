@@ -7,20 +7,21 @@
 
 ## Tareas pendientes
 ### Programming
+- [x] Script "iniciar minijuego random"
+- [x] Hacer que no se repitan los *(5)* últimos
+- [x] Sistema juego Tiempo/Vidas
+- [x] GameOver -> (volver al menú)
 - [x] GameOver Screen ("GameOver" & Puntuación)
-- [ ] Reducción de tiempo progresiva
 - [x] Minijuego inicial (reloj de arena)
 - [x] Animar reloj --> Barra de tiempo
-- [ ] Corregir Target sobre Dragable (no se puede agarrar)
 - [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
-- [X] Sonidos fail (quitar "geimover!" y poner globito)
+- [ ] Reducción de tiempo progresiva
+- [ ] Arreglar animación del tutorial (en reproductor web no sale bien)
+- [ ] Corregir Target sobre Dragable (no se puede agarrar)
 - [ ] Desktop randomizer
 	- [ ] 1~3 iconos
 	- [ ] Posiciones aleatorias
-- [x] Script "iniciar minijuego random"
-- [x] Hacer que no se repitan los *(2)* últimos
-- [x] Sistema juego Tiempo/Vidas
-- [x] GameOver -> (volver al menú)
+
 #### Mecanicas de juego
   - [x] Clicar en 1 sitio 
   - [x] Mover 1 cosa a 1 sitio 
@@ -29,6 +30,7 @@
   - [ ] Cut the rope
 
 ### Sonido
+- [X] Sonidos fail (quitar "geimover!" y poner globito)
 - [x] Musica punchimpum empieza cuando hay partida en marcha
 - [ ] Cambiar tambien la musica de la pantalla de GameOver
 - [ ] Musica mas tranquila para pantallas fuera de partida
