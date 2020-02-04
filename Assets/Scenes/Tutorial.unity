@@ -938,7 +938,7 @@ PrefabInstance:
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.53
+      value: 0.666
       objectReference: {fileID: 0}
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
@@ -988,7 +988,7 @@ PrefabInstance:
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40101802
+      value: 0.36239997
       objectReference: {fileID: 0}
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
@@ -1418,9 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b904d6143954ea4ebe3f55f8c857f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winSound: {fileID: 6015943696603952046}
   animator: {fileID: 5397561872772503508}
-  gameController: {fileID: 0}
   titulo: {fileID: 2007890472547998305}
   check: {fileID: 3348125775902263123}
   win: 0

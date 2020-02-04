@@ -8,15 +8,16 @@ public class GameOverManager : MonoBehaviour
 {
     public Button backButton;
     public Button replayButton;
-    public GameController gc;
+    GameController gc;
+    AudioManager am;
     public Text scoreText;
     public Text topmarkText;
 
     void Start()
     {
         gc = GameObject.Find("GameController").GetComponent<GameController>();
-        gc.musicaJuego.Stop();
-        //gc.musicaMenu.Play();
+        am = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        am.GameOver();
         scoreText.text = "Score: " + gc.victorias;
         topmarkText.text = "TopMark: " + gc.topmark;
     }
@@ -24,19 +25,14 @@ public class GameOverManager : MonoBehaviour
     public void GoBack()
     {
         Debug.Log("GoBack!");
-        gc.sonidoClic.Play();
+        am.Clic();
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Replay()
     {
         Debug.Log("Replay!");
-        gc.sonidoClic.Play();
+        am.Clic();
         gc.Replay();
-    }
-
-    public void Exit()
-    {
-
     }
 }

@@ -7,9 +7,10 @@ using UnityEngine.UI;
 public class Tutorial : MonoBehaviour
 {
     // VARIABLES logicas
-    public AudioSource winSound;
+    GameController gc;
+    AudioManager am;
     public TutorialAnimator animator;
-    public GameController gameController;
+    
 
     // UI elements
     public Text titulo;
@@ -24,7 +25,8 @@ public class Tutorial : MonoBehaviour
     {
         titulo.enabled = false;
         check.enabled = false;
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
+        gc = GameObject.Find("GameController").GetComponent<GameController>();
+        am = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -40,7 +42,7 @@ public class Tutorial : MonoBehaviour
     {
         if (!win)      // Verifica que el tutorial no haya finalizado ya
         {
-            winSound.Play();
+            am.Win();
             win = true;
             check.enabled = true;
             animator.Animate();
@@ -52,7 +54,7 @@ public class Tutorial : MonoBehaviour
     public void EndTutorial()
     {
         Debug.Log("Tutorial Complete!");
-        gameController.musicaJuego.Play();
-        gameController.LoadNext();
+        am.MusicaJuego();
+        gc.LoadNext();
     }
 }

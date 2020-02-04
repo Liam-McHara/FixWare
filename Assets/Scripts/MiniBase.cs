@@ -7,11 +7,7 @@ using UnityEngine.UI;
 public class MiniBase : MonoBehaviour
 {
     // VARIABLES logicas
-
-    public AudioSource winSound;
-    public AudioSource failSound;
-
-    public GameController gameController;
+    GameController gc;
     public InfoShow infoShow;
     public float preTitleTime = 1.0f;
     public float preGameTime = 1.0f;
@@ -41,13 +37,13 @@ public class MiniBase : MonoBehaviour
 
     void Start()
     {
+        gc = GameObject.Find("GameController").GetComponent<GameController>();
         infoShow.Hide();
         telon.enabled = true;
         titulo.enabled = false;
         check.enabled = false;
         cross.enabled = false;
-        gameController = GameObject.Find("GameController").GetComponent<GameController>();
-        tiempo = gameController.tiempo;
+        tiempo = gc.tiempo;
         tiempoInicial = tiempo; 
     }
 
@@ -133,8 +129,7 @@ public class MiniBase : MonoBehaviour
         {
             // HAS GANADO!!  ueee
             // aqui se hacen las cositas de cuando se gana (sumar puntos, feedback positivo, pasar al siguiente minijuego...)
-            gameController.Win();
-            winSound.Play();
+            gc.Win();
             win = true;
             check.enabled = true;
             EndGame();
@@ -148,8 +143,7 @@ public class MiniBase : MonoBehaviour
             // HAS PERDIDO...  buuuu
             // aqui se hacen las cositas de cuando se pierde (perder una vida, feedback negativo, pasar al siguiente minijuego, game over...)
             fail = true;
-            gameController.Fail();
-            failSound.Play();
+            gc.Fail();
             cross.enabled = true;
             EndGame();
         }
@@ -166,7 +160,7 @@ public class MiniBase : MonoBehaviour
         telon.enabled = true;
         titulo.enabled = false;
         // scoreText.enabled = true;
-        scoreText.text = "Score: " + gameController.victorias;
+        scoreText.text = "Score: " + gc.victorias;
         check.enabled = false;
         cross.enabled = false;
         infoShown = true;
@@ -177,11 +171,11 @@ public class MiniBase : MonoBehaviour
     {
         Debug.Log("LOAD NEXT!");
         infoShow.Hide();
-        gameController.LoadNext();
+        gc.LoadNext();
     }
 
     public int GetVidas()
     {
-        return gameController.vidas;
+        return gc.vidas;
     }
 }

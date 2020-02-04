@@ -2,6 +2,11 @@
 
 PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 
+### *NOVEDAD:* Ahora el tiempo se va reduciendo cuantos más minijuegos completas.
+![Gráfico reducción de tiempo](timeProgression.png)
+
+
+
 ## Lista de Minijuegos
 - **mini1** : *Fix the meme!*
 - **mini2** : *Repair the WiFi*
@@ -24,7 +29,7 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 - [x] Minijuego inicial (reloj de arena)
 - [x] Animar reloj --> Barra de tiempo
 - [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
-	- [ ] Corregir doble música con elegancia 
+	- [x] Corregir doble música con elegancia 
 - [x] *Reducción de tiempo progresiva*
 - [ ] *Añadir soporte para diferentes resoluciones*
 - [x] Corregir Target sobre Dragable (no se puede agarrar)
@@ -42,8 +47,8 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 ### Sonido
 - [X] Sonidos fail (quitar "geimover!" y poner globito)
 - [x] Musica punchimpum empieza cuando hay partida en marcha
-- [ ] Cambiar tambien la musica de la pantalla de GameOver
-- [ ] Musica mas tranquila para pantallas fuera de partida
+- [x] Cambiar tambien la musica de la pantalla de GameOver
+- [x] Musica mas tranquila para pantallas fuera de partida
 - [ ] Mute Button
 - [ ] Sonidos Recycle
 - [ ] Sonidos Restore Meme

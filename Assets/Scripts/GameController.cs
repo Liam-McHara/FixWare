@@ -18,16 +18,14 @@ public class GameController : MonoBehaviour
     public int topmark;     // mejor puntuación
 
     float tiemInicial;
-    int[] lastPlayed;       // Guarda los indices de los ultimos minijuegos jugados
+    public int[] lastPlayed;       // Guarda los indices de los ultimos minijuegos jugados
     int lastIndex;          // Guarda el último indice del array lastPlayed, para alternar de uno a otro.
 
     // AUDIO
-    public AudioSource musicaJuego;
-    public AudioSource musicaMenu;
-    public AudioSource sonidoClic;
+    public AudioManager am;
 
     public int cantidadDeMinijuegos;
-    public int noRepetir;
+    int noRepetir = 6;      // ATENCION: Al cambiar este valor hay que modificar la selección semi-aleatoria de minijuego.
 
     public bool tutorialFirst;
     //FOR TESTING
@@ -43,7 +41,7 @@ public class GameController : MonoBehaviour
 
     public void PlayButton()
     {
-        sonidoClic.Play();
+        am.Clic();
         if (tutorialFirst) StartTutorial();
         else StartGame();
     }
@@ -51,6 +49,7 @@ public class GameController : MonoBehaviour
     public void StartTutorial()
     {
         Debug.Log("Starting Tutorial...");
+        am.Mute();
         SceneManager.LoadScene("Tutorial");
         lastPlayed = new int[noRepetir];
     }
@@ -66,8 +65,8 @@ public class GameController : MonoBehaviour
         {
             lastPlayed[i] = 0;
         }
-        
-        musicaJuego.Play();
+
+        am.MusicaJuego();
         SceneManager.LoadScene("mini" + load);
     }
 
@@ -77,11 +76,12 @@ public class GameController : MonoBehaviour
         nivel = victorias / victPorNivel;
         tiempo = Mathf.Pow(0.89f, (nivel - 12)) + (tiemInicial - 4);
 
+        // Seleccion semi-aleatorioa de minijuego
         int random = Random.Range(1, cantidadDeMinijuegos + 1);     // Selecciona uno aleatorio
-
+        
         while (random == lastPlayed[0] || random == lastPlayed[1]   // Comprueba que no se repita el minijuego
             || random == lastPlayed[2] || random == lastPlayed[3] 
-            || random == lastPlayed[4])
+            || random == lastPlayed[4] || random == lastPlayed[5])
         {
             random = Random.Range(1, cantidadDeMinijuegos + 1);
         }
@@ -105,6 +105,7 @@ public class GameController : MonoBehaviour
     public void Fail()
     {
         Debug.Log("Fail...");
+        am.Fail();
         --vidas;
         if (vidas <= 0) GameOver();
     }
@@ -112,12 +113,14 @@ public class GameController : MonoBehaviour
     public void Win()
     {
         Debug.Log("WIN!");
+        am.Win();
         ++victorias;
     }
 
     public void GameOver()
     {
         Debug.Log("GAME OVER");
+        am.MusicaGameOver();
         SceneManager.LoadScene("GameOverScene");
         if (victorias > topmark) topmark = victorias;
 
@@ -126,10 +129,10 @@ public class GameController : MonoBehaviour
         tiempo = tiemInicial;
     }
     
-    public void Exit()
+    public void ExitButton()
     {
         Debug.Log("Bye Bye");
-        sonidoClic.Play();
+        am.Clic();
         Application.Quit();
     }
     
@@ -137,7 +140,27 @@ public class GameController : MonoBehaviour
     {
         victorias = 0;
         tiempo = tiemInicial;
-        musicaJuego.Play();
+        am.MusicaJuego();
         LoadNext();
     }
 }
+
+/* CODIGO EXPLOSIVO PARA ENCONTRAR MINIJUEGO NO REPETIDO
+        int random = 1; 
+        bool encontrado = false;
+        while (!encontrado)
+        {
+            random = Random.Range(1, cantidadDeMinijuegos + 1); // selecciona minijuego al azar
+            Debug.Log("Probando con "+random);
+            for (int i = 0; i < noRepetir; ++i)                 // y mira la lista...
+            {
+                Debug.Log("i = "+i);
+                //if (random == lastPlayed[i]) break;             // Si se repite, vuelve a empezar.
+                if (i == noRepetir-1 && random == lastPlayed[i])   // Si llega al final y no es repetido...
+                {
+                    encontrado = true;              // Entonces ya ha encontrado el minijuego ("random")
+                    Debug.Log("encontrado = true");
+                }
+            }
+            Debug.Log("fin del while");
+        }*/
