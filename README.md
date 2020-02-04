@@ -3,9 +3,16 @@
 PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 
 ## Lista de Minijuegos
-- **mini1** : *Testing*
-- **mini2** : *Testing*
-- **mini3** : *Testing*
+- **mini1** : *Fix the meme!*
+- **mini2** : *Repair the WiFi*
+- **mini3** : *Repair ti*
+- **mini4** : *Repair your sins*
+- **mini5** : *Repair the Darkness!*
+- **mini6** : *Repair the car!*
+- **mini7** : *Recycle*
+- **mini8** : *Repair the planet!*
+- **mini9** : *Repair the TV!*
+- **mini10** : *Restore happiness*
 
 ## Tareas pendientes
 ### Programming
@@ -18,9 +25,9 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 - [x] Animar reloj --> Barra de tiempo
 - [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
 	- [ ] Corregir doble música con elegancia 
-- [ ] *Reducción de tiempo progresiva*
+- [x] *Reducción de tiempo progresiva*
 - [ ] *Añadir soporte para diferentes resoluciones*
-- [ ] Corregir Target sobre Dragable (no se puede agarrar)
+- [x] Corregir Target sobre Dragable (no se puede agarrar)
 - [ ] Desktop randomizer
 	- [ ] 1~3 iconos
 	- [ ] Posiciones aleatorias

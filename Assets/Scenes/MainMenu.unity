@@ -299,16 +299,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 4
   victorias: 0
-  tiempo: 5
+  tiempo: 6
+  nivel: 0
+  victPorNivel: 4
   topmark: 0
   musicaJuego: {fileID: 1493253287}
   musicaMenu: {fileID: 1860610576}
   sonidoClic: {fileID: 1952121432}
   cantidadDeMinijuegos: 10
   noRepetir: 6
-  tutorialFirst: 1
+  tutorialFirst: 0
   loadOverride: 0
-  loadThis: 0
+  loadThis: 10
 --- !u!4 &439136633
 Transform:
   m_ObjectHideFlags: 0

@@ -8,7 +8,10 @@ public class GameController : MonoBehaviour
 {
     public int vidas;
     public int victorias;
-    public float tiempo;    // tiempo disponible para resolver los minijuegos
+    public float tiempo;        // tiempo disponible para resolver los minijuegos
+    public int nivel = 0;
+    public int victPorNivel;    // Cantidad de victorias para subir de nivel (se reduce el tiempo disponible) según la siguiente función:
+                                //      0.89^(x-12)+('tiempo'-4)       http://www.mathsisfun.com/data/function-grapher.php?func1=0.89%5E(x-12)%2B2&xmin=-2.867&xmax=13.64&ymin=-2.042&ymax=8.160
 
     int vidInicial;
     int victInicial;
@@ -68,8 +71,12 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("mini" + load);
     }
 
-    public void LoadNext()  // Carga el siguiente minijuego, comprobando que no se repitan los 2 ultimos
+    public void LoadNext()  // Carga el siguiente minijuego, comprobando que no se repitan los "noRepetir" últimos
     {
+        // Asignación del tiempo disponible
+        nivel = victorias / victPorNivel;
+        tiempo = Mathf.Pow(0.89f, (nivel - 12)) + (tiemInicial - 4);
+
         int random = Random.Range(1, cantidadDeMinijuegos + 1);     // Selecciona uno aleatorio
 
         while (random == lastPlayed[0] || random == lastPlayed[1]   // Comprueba que no se repita el minijuego
@@ -129,6 +136,7 @@ public class GameController : MonoBehaviour
     public void Replay()        // Empieza una nueva partida
     {
         victorias = 0;
+        tiempo = tiemInicial;
         musicaJuego.Play();
         LoadNext();
     }

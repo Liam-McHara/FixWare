@@ -240,7 +240,7 @@ PrefabInstance:
     - target: {fileID: 2007890472371902369, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
       propertyPath: m_Text
-      value: Repair the meme!
+      value: Fix the meme!
       objectReference: {fileID: 0}
     - target: {fileID: 2534499400008721059, guid: 12f398a56c4e669448ba8abf0c400b6b,
         type: 3}
@@ -603,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9
+      value: 19.7
       objectReference: {fileID: 0}
     - target: {fileID: 6980702994277073405, guid: 3f67e8c73a6160e47a7bf6b6024dd303,
         type: 3}
