@@ -1,6 +1,6 @@
 # FixWare
 
-PLAY IT HERE! -> https://lagjara.itch.io/fixware2
+PLAY IT HERE! -> https://lagjara.itch.io/fixware
 
 ### *NOVEDAD:* Ahora el tiempo se va reduciendo cuantos más minijuegos completas.
 ![Gráfico reducción de tiempo](timeProgression.png)
@@ -54,4 +54,4 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware2
 - [ ] Sonidos Restore Meme
 - [ ] Sonidos DonateButton
 
-# ¡¡QUEREMOS MÁS MINIJUEGOS!!
+## ¡¡QUEREMOS MÁS MINIJUEGOS!!
