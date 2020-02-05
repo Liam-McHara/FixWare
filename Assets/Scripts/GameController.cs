@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour
     public AudioManager am;
 
     public int cantidadDeMinijuegos;
-    int noRepetir = 6;      // ATENCION: Al cambiar este valor hay que modificar la selección semi-aleatoria de minijuego.
+    int noRepetir = 9;      // ATENCION: Al cambiar este valor hay que modificar la selección semi-aleatoria de minijuego.
 
     public bool tutorialFirst;
     //FOR TESTING
@@ -81,7 +81,7 @@ public class GameController : MonoBehaviour
         
         while (random == lastPlayed[0] || random == lastPlayed[1]   // Comprueba que no se repita el minijuego
             || random == lastPlayed[2] || random == lastPlayed[3] 
-            || random == lastPlayed[4] || random == lastPlayed[5])
+            || random == lastPlayed[4] || random == lastPlayed[5] || random == lastPlayed[6] || random == lastPlayed[7] || random == lastPlayed[8])
         {
             random = Random.Range(1, cantidadDeMinijuegos + 1);
         }
