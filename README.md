@@ -21,18 +21,12 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware
 
 ## Tareas pendientes
 ### Programming
-- [x] Script "iniciar minijuego random"
-- [x] Hacer que no se repitan los *X* últimos
-- [x] Sistema juego Tiempo/Vidas
-- [x] GameOver -> (volver al menú)
-- [x] GameOver Screen ("GameOver" & Puntuación)
-- [x] Minijuego inicial (reloj de arena)
-- [x] Animar reloj --> Barra de tiempo
-- [x] Corregir doble música al Restart --> HE QUITADO EL BOTON DE "BACK TO MENU" :P
-	- [x] Corregir doble música con elegancia 
-- [x] *Reducción de tiempo progresiva*
+- [x] *Reducción de tiempo progr
 - [ ] *Añadir soporte para diferentes resoluciones*
-- [x] Corregir Target sobre Dragable (no se puede agarrar)
+- [ ] Check de tutorial: que desaparezca un poquito antes
+- [ ] Ondas WiFi al completar
+- [ ] Reparar Clicker que vomita errores
+- [ ] Meme randomizer
 - [ ] Desktop randomizer
 	- [ ] 1~3 iconos
 	- [ ] Posiciones aleatorias
@@ -53,5 +47,11 @@ PLAY IT HERE! -> https://lagjara.itch.io/fixware
 - [ ] Sonidos Recycle
 - [ ] Sonidos Restore Meme
 - [ ] Sonidos DonateButton
+
+### Arte
+- [ ] Botón reset con aspecto de botón reset
+- [ ] Memes
+- [ ] Icono Mute Music (Activado/Desactivado)
+- [ ] Icono Mute Sounds (Acivado/Desactivado)
 
 ## ¡¡QUEREMOS MÁS MINIJUEGOS!!

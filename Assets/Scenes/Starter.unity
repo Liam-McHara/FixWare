@@ -565,7 +565,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e52d8c8127dee044886c7691b298a31f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.14
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -711,9 +711,9 @@ MonoBehaviour:
   nivel: 0
   victPorNivel: 1
   topmark: 0
+  lastPlayed: 
   am: {fileID: 818396498}
   cantidadDeMinijuegos: 10
-  noRepetir: 6
   tutorialFirst: 1
   loadOverride: 0
   loadThis: 0
@@ -1170,7 +1170,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 051a9729a6bebf346bf6a7ff1d84fb3c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.14
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0

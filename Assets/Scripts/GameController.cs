@@ -139,6 +139,7 @@ public class GameController : MonoBehaviour
     public void Replay()        // Empieza una nueva partida
     {
         victorias = 0;
+        lastPlayed = new int[noRepetir];
         tiempo = tiemInicial;
         am.MusicaJuego();
         LoadNext();
